@@ -1,14 +1,174 @@
 /* Používáme intuitivní výpočet rozměrů prvků. */
-*, *:before, *:after {
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap');
+
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
 html {
-  font-family: sans-serif;
+  font-family: 'Red Hat Mono', monospace;
+  background: linear-gradient(#FFF0FE 68%, #c5c6f2 100%);
+
+
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bubble {
+  position: absolute;
+  height: 130vh;
+  left: 90%;
+  transform: translate(-50%, -50%);
+
+}
+
+.toilet_stuff1 {
+  position: absolute;
+  height: 30vh;
+  right: 10%;
+}
+
+
+.toilet_stuff2 {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  height: 40vh;
+
 }
 
 .container {
-  max-width: 20rem;
-  margin-right: auto;
-  margin-left: auto;
+  width: 60%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+
+
+h1 {
+  font-family: 'Red Hat Mono', monospace;
+  font-size: 35px;
+  color: #5F3343;
+  right: 50%;
+  transform: translate(50%, 80%);
+  position: absolute;
+  top: 30%;
+
+}
+
+.text_overlay {
+  position: absolute;
+  transform: translate(-50%, -10%);
+  top: 50%;
+  left: 50%;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  max-width: 90%;
+  border-radius: 2rem;
+
+}
+
+
+
+.continue-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #5F3343;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 2rem;
+}
+
+.continue-button:hover {
+  background-color: #4a2835;
+}
+
+.img_main img#background {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+
+
+
+.main_persons img {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 2rem;
+}
+
+.person-container {
+  position: relative;
+  text-align: center;
+}
+
+
+.person-container img {
+  width: 150px;
+  height: 150px;
+}
+
+.main_person1 {
+  top: 120px;
+  right: 90px;
+
+
+}
+
+.main_person2 {
+  top: 120px;
+  left: 40px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(50px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.sliding-element {
+  animation: slide 10s infinite;
+
+}
+
+.img-link {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.img-link img {
+  transition: transform 0.3s ease;
+}
+
+
+.img-link:hover img {
+  transform: scale(1.1);
 }
