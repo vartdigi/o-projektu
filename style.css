@@ -1,6 +1,5 @@
 /* Používáme intuitivní výpočet rozměrů prvků. */
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap');
 
 *,
 *:before,
@@ -59,9 +58,9 @@ body {
 
 
 h1 {
-  font-family: 'Red Hat Mono', monospace;
+  font-family: "Red+Hat" monospace;
   font-size: 35px;
-  color: #5F3343;
+  color: #371d1d;
   right: 50%;
   transform: translate(50%, 80%);
   position: absolute;
@@ -70,6 +69,7 @@ h1 {
 }
 
 .text_overlay {
+
   position: absolute;
   transform: translate(-50%, -10%);
   top: 50%;
@@ -84,18 +84,20 @@ h1 {
 
 
 .continue-button {
+  font-family: 'Red Hat Mono', monospace;
   margin-top: 20px;
   padding: 10px 20px;
   font-size: 18px;
-  background-color: #5F3343;
+  background-color: #abacf5;
   color: white;
   border: none;
   cursor: pointer;
   border-radius: 2rem;
+  transition: all 0.3s ease;
 }
 
 .continue-button:hover {
-  background-color: #4a2835;
+  background-color: #705ce3;
 }
 
 .img_main img#background {
@@ -103,11 +105,6 @@ h1 {
   width: 100%;
   height: auto;
 }
-
-
-
-
-
 
 
 .main_persons img {
