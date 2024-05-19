@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@400;700&display=swap');
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Red Hat Mono', monospace;
+  background: linear-gradient(#FFF0FE 68%, #c5c6f2 100%);
+
+
+}
+
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-family: "Red+Hat" monospace;
+  font-size: 70px;
+  color: #371d1d;
+  right: 50%;
+  left: 50%;
+
+}
+
+img {
+  width: 350px;
+  max-height: 100%;
+  border-radius: 20%;
+
+}
+
+.container {
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+}
+
+.about_me {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  width: 600px;
+  height: 400px;
+  border-radius: 2rem;
+  text-align: left;
+}
+
+.zpet-button {
+  font-family: 'Red Hat Mono', monospace;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #abacf5;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 2rem;
+  transition: all 0.3s ease;
+  border: 1px solid #826cda;
+}
+
+.zpet-button:hover {
+  background-color: #705ce3;
+
+}
+
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(50px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.sliding-element {
+  animation: slide 10s infinite;
+  display: flex;
+  position: absolute;
+  max-height: 100%;
+  right: 100px;
+  bottom: 70px;
+
+}
